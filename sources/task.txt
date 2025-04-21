@@ -1,0 +1,17 @@
+Dataset: Air, Earth, Water from Dong Thap Province
+
+Kai (23h59 22/04/2025 GMT+7): 
+1. Set up Docker Environment for Kafka
+2. Push the data into topics
+
+Phukage (23h59 29/04/2025 GMT+7): 
+1. Set up Spark, consumes data from Kafka
+2. Join the records based on timestamp (Re-determined later)
+3. Create streaming query
+4. Store result into database
+* Bonus: Implement transaction for database
+
+Alan (23h59 04/05/2025 GMT+7):
+1. Retrieved data from the database
+2. Set up Metabase for analytical processing
+* Bonus: Create a dashboard / prediction model
