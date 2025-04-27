@@ -1,0 +1,55 @@
+# Bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+pip-wheel-metadata/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Test results / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+
+# Environments / secrets
+.env
+.env.*
+*.env
+*.secret
+secrets.json
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDEs/editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Mac/Linux system files
+.DS_Store
+Thumbs.db
+
+# Kafka logs (optional if you're running Kafka locally)
+kafka-logs/
+zookeeper-logs/
