@@ -1,4 +1,5 @@
 from multiprocessing import Process
+from threading import Thread
 
 from configs import KConsumer, Constants
 
@@ -7,7 +8,7 @@ class Consumer:
     @staticmethod
     def main() -> None:
         processes =[
-            Process(target=KConsumer(topic).consume)
+            Thread(target=KConsumer(topic).consume)
             for topic in Constants.KAFKA_TOPICS
         ]
 

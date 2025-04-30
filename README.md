@@ -67,7 +67,7 @@ Okay, after you finished coding spark, you can start deploying with this command
 ```bash
 docker exec -it spark-master spark-submit \
   --master spark://spark-master:7077 \
-  --packages  org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.5 \
+  --packages  org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.5,org.postgresql:postgresql:42.2.27 \
   /opt/spark-app/main.py
 ```
 
