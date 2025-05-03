@@ -217,10 +217,10 @@ if __name__ == "__main__":
     def earth_table(df, epoch_id):
         df.write \
             .format("jdbc") \
-            .option("url", "jdbc:postgresql://postgres:5432/") \
+            .option("url", "jdbc:postgresql://postgres:5432/metabase") \
             .option("dbtable", "Earth") \
-            .option("user", "postgres") \
-            .option("password", "postgres") \
+            .option("user", "admin") \
+            .option("password", "admin") \
             .option("driver", "org.postgresql.Driver") \
             .mode("append") \
             .save()
@@ -234,10 +234,10 @@ if __name__ == "__main__":
     def air_table(df, epoch_id):
         df.write \
             .format("jdbc") \
-            .option("url", "jdbc:postgresql://postgres:5432/") \
+            .option("url", "jdbc:postgresql://postgres:5432/metabase") \
             .option("dbtable", "Air") \
-            .option("user", "postgres") \
-            .option("password", "postgres") \
+            .option("user", "admin") \
+            .option("password", "admin") \
             .option("driver", "org.postgresql.Driver") \
             .mode("append") \
             .save()
@@ -251,10 +251,10 @@ if __name__ == "__main__":
     def water_table(df, epoch_id):
         df.write \
             .format("jdbc") \
-            .option("url", "jdbc:postgresql://postgres:5432/") \
+            .option("url", "jdbc:postgresql://postgres:5432/metabase") \
             .option("dbtable", "Water") \
-            .option("user", "postgres") \
-            .option("password", "postgres") \
+            .option("user", "admin") \
+            .option("password", "admin") \
             .option("driver", "org.postgresql.Driver") \
             .mode("append") \
             .save()
@@ -268,10 +268,10 @@ if __name__ == "__main__":
     def unified_table(df, epoch_id):
         df.write \
             .format("jdbc") \
-            .option("url", "jdbc:postgresql://postgres:5432/") \
+            .option("url", "jdbc:postgresql://postgres:5432/metabase") \
             .option("dbtable", "UnifiedData") \
-            .option("user", "postgres") \
-            .option("password", "postgres") \
+            .option("user", "admin") \
+            .option("password", "admin") \
             .option("driver", "org.postgresql.Driver") \
             .mode("append") \
             .save()
